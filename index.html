@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="topnav">
+        <a class="ativo" href="#">
+        <img src="cursohtml.png" alt="" srcset="">
+        </a>
+        <a class="subTitulo" href="#blog">Blog</a>
+        <a class="subTitulo" href="#contato">Contato</a>
+        <div class="topnav-rigth">
+            <a class="subTitulo" href="#busca">Procurar</a>
+            <a class="subTitulo" href="#sobre">Sobre</a>            
+        </div><br><br>
+        <div>
+            <p class="empresa">HTML Itu</p>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="coluna">
+            <h1 class="titulo">Formulário</h1>
+            <fieldset>
+                <legend>Pré Cadastro do Estudante</legend>
+                <label>Nome: </label><br>
+                <input type="text" name="nome" required size="30"> <br><br>
+    
+                <label>Nascimento</label><br>
+                <input type="date" name="nascimento" required> <br><br>
+    
+                <label>CPF: </label><br>
+                <input type="text" name="cpf" required size="14" maxlength="14"
+            pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}" placeholder="Ex: 123.456.789-10"
+            title="Informe o CPF no formato 999.999.999-31"/> <br><br>
+    
+                <label>Sexo: </label> <br>
+                <input type="radio" name="sexo" value="M">Masculino
+                <input type="radio" name="sexo" value="F" checked>Feminino<br><br>
+    
+                <label>Cupom desconto: </label><br>
+                <input type="number" name="numero"  min="0" required> <br>
+                <br>
+    
+                <input type="checkbox" name="">
+                <label>Possui conhecimento de lógica?</label><br><br>
+
+                
+                <button class="botaoSalvar">💾 Salvar</button> 
+                <button class="botaoLimpar">🧹Limpar</button>
+                
+                
+    
+            </fieldset>
+        </div>
+        <div class="coluna">
+            <h1 class="titulo">Dados</h1>
+            <div id="lado-direito">        
+                <table id="tabela" border="1px">
+                    <thead>
+                        <tr>
+                            <th colspan="5">Alunos Cadastrados</th>
+                        </tr>
+                        <tr id="menu-table">
+                            <th>Nº</th>
+                            <th>Nome</th>
+                            <th>Cidade</th>
+                            <th>Sexo</th>
+                            <th>Cupom</th>
+                        </tr>
+                    </thead> 
+                    <tbody>                
+                        <tr>                
+                            <td>1</td>
+                            <td>Carlos Eduardo</td>
+                            <td>Itu</td>
+                            <td>Masculino</td>
+                            <td>112233</td> 
+                        </tr> 
+        
+                        <tr>
+                            <td>2</td>
+                            <td>Lucas Rodrigues</td>
+                            <td>Salto</td>
+                            <td>Masculino</td>
+                            <td>222233</td>
+                            
+                        </tr> 
+        
+                        <tr>
+                            <td>3</td>
+                            <td>Camila Araujo</td>
+                            <td>Itu</td>
+                            <td>Feminino</td>
+                            <td>332233</td> 
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td>4</td>
+                            <td>Amanda Pereira</td>
+                            <td>Indaiatuba</td>
+                            <td>Feminino</td>
+                            <td>442233</td> 
+                            
+                        </tr>
+        
+                        <tr>
+                            <td>5</td>
+                            <td>João Mendes</td>
+                            <td>Campinas</td>
+                            <td>Masculino</td>
+                            <td>552233</td> 
+                            
+                        </tr>    
+                       
+                    </tbody> 
+                </table> <br>
+            </div> 
+        </div>
+    </div>
+
+    <footer>
+        <p>HTML Itu - Todos os direitos reservados &copy;</p>
+    </footer>
+    
+</body>
+</html>
