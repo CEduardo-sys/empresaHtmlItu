@@ -18,7 +18,8 @@ body{
 }
 
 .container{
-    display: flex;
+    display: flex; /*permite que outros elementos fiquem ao lado dele e sua largura padrão sera definida para largura total
+    dos seus filhos*/
 }
 
 .coluna{
@@ -27,7 +28,8 @@ body{
 
 }
 .coluna:first-child{
-    margin-right: 24px;
+    margin-right: 24px;/*Afasta a tabela do formulario
+    tipo do elemento que é o primeiro filho.*/
 }
 
 .titulo{
@@ -66,7 +68,7 @@ body{
 #tabela{
     margin-top:22px;
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /*Elimina o espaço entres as celular de forma que as bordas em torno das celulas se fundam em uma*/
 }
 tr, td{
     padding: 20px;
